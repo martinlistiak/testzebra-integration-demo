@@ -1,0 +1,9 @@
+name: Deploy
+on:
+  push:
+    branches: ["main"]
+jobs:
+  call-webhook:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -X POST "https://captain.dev.testzebra.com/api/v2/user/apps/webhooks/triggerbuild?namespace=captain&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6IjVlMDlhZTU4LWUyMTAtNGIzYy1iYTY0LTUwZjllMTY1MjZlNyIsImFwcE5hbWUiOiJ0ZXN0emVicmEtaW50ZWdyYXRpb24tZGVtbyIsIm5hbWVzcGFjZSI6ImNhcHRhaW4ifSwiaWF0IjoxNzE5MDk3MTA0fQ.4mXNnEtci594Um4itLWrpALq6xPLBL2eXx79Kqmq0VI"
