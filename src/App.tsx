@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col justify-start items-center">
+      <div className="w-full flex flex-col justify-start items-center">
         <h1 className="text-3xl font-bold mb-12">
           TestZebra.com integration demo
         </h1>
@@ -31,8 +31,8 @@ function App() {
         </button>
         <p>Step: {step}</p> */}
         {/* 3 tabs [test template list, sending invitations, checking results] */}
-        <div className="flex flex-col">
-          <div className="flex flex-row">
+        <div className="w-full flex flex-col">
+          <div className="flex flex-row justify-center">
             <button
               onClick={() => setStep(0)}
               className={`btn btn-${

@@ -8,9 +8,11 @@ export const TestResults = ({
       {respondents.map((respondent) => (
         <iframe
           key={respondent.id}
-          className="w-full"
-          src={`${import.meta.env.VITE_APP_TESTZEBRA_API_URL}/test/${
-            respondent.id
+          className="w-full h-auto min-h-96"
+          src={`${
+            import.meta.env.VITE_APP_TESTZEBRA_API_URL
+          }/test/integration/${respondent.id}?bearerToken=${
+            import.meta.env.VITE_APP_TESTZEBRA_API_KEY
           }`}
         />
       ))}
