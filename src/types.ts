@@ -1,0 +1,42 @@
+export type Template = {
+  id: number;
+  name: string;
+  companyId: null;
+  language: string;
+  longDescriptionForCompany: string;
+  shortDescriptionForCompany: null | string;
+  testDescriptionForCandidate: null | string;
+  authorInformation: null | string;
+  duration: number | null;
+  difficulty: null;
+  isDraft: boolean;
+  isCodeChallenge: boolean;
+  creditCost: number;
+  genesisId: null;
+  codeChallengeId: number | null;
+  programmingLanguageId: number | null;
+  isFrontend: boolean;
+  isArchived: boolean;
+  createdAt: Date;
+  updatedAt: Date;
+  averageTimeSpent: number | null;
+  thalentoTestId: number | null;
+  testTemplateSettingsPresetId: number | null;
+  imageUrl: null | string;
+  programmingLanguage: {
+    id: number;
+    name: string;
+    isFrontend: boolean;
+    createdAt: Date;
+    updatedAt: Date;
+  } | null;
+  categories: string[];
+  categoriesObjects: {
+    name: string;
+    translationKey: string;
+  }[];
+  availableInLanguages: string[];
+  hasPreviewQuestions: boolean;
+  totalQuestionsCount: number;
+  isCodeChallengePreviewAvailable: boolean;
+};
