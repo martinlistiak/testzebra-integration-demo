@@ -7,4 +7,4 @@ COPY . .
 RUN yarn install
 RUN yarn build
 
-CMD ["yarn", "preview", '--port', '3000', '--host']
+CMD ["yarn", "preview", "--port", "3000", "--host"]
