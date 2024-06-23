@@ -4,7 +4,6 @@ WORKDIR /user/src/app
 
 COPY . .
 
-
 RUN yarn install
 RUN yarn build
 
