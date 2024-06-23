@@ -4,7 +4,8 @@ WORKDIR /user/src/app
 
 COPY . .
 
+
 RUN yarn install
 RUN yarn build
 
-CMD ["yarn", "preview"]
+CMD ["yarn", "preview", '--port', '3000', '--host']
